@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Crime Visulization</title>
+<link rel="stylesheet" href="MainStyle.css">
+
+</head>
+<!-- For Scrolling -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"
+	charset="utf-8" type="text/javascript"></script>
+	<script src="https://d3js.org/d3-queue.v2.min.js"></script>
+	<script src="http://d3js.org/d3.geo.tile.v0.min.js"></script>
+	<script type="text/javascript" src="MainScript.js"></script>
+	<h1 class="bold" > Visulizing Crime Data In Chicago</h1>
+	<h3>By Tanmay Thakar</h3>
+	<h3 >#01608538</h3>
+	<p style="font-weight: bold;"> Content :<p> (1) Top 100 Point On Map <br /> (2) Multi-Series Line Chart Interactive  <br /> (3) Daily Rhythym Of Crime <br /> (4) Arrest vs Not Arrest</p>
+	<p style="font-weight: bold;"> Data :<p> (1) <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2">City Of Chicago Data Portal</a> <br /></p>
+	
+	<div id="cmap" style="height:600px;text-align: center; ">
+	</div>
+	
+	<div id="line" style="width:100%; visibility:hidden;text-align: center;margin-top: 50px;">
+	<h2  style="margin:10px;"> Multi Line Chart(Time,Crime) </h2>
+	<p> It shows the number of crime time wise. you can select any crime type from right side button and you can also select time window from rectangle(bottom).and on mouse over rect shows the count for that specific x(time).</p>
+	</div>
+	
+	
+	
+	<h2 style="margin-top: 50px;"> Daily Rhythym of Crime </h2>
+		<div id="mainbar" style="width:100%;visibility:hidden;text-align: center;">
+	</div>
+	<div id="mbar" style="width:100%;visibility:hidden;text-align: center;">
+	</div>
+	
+		<div id="stack" style="width:100%;visibility:hidden;text-align: center;margin-top: 50px;">
+	<h2 style="margin:10px;"> Crime That Result in Arrest </h2>
+	<p> It shows the number of crime which end with Arrest or not.</p>
+	</div>
+	
+	
+</body>
+
+
+
+
+</html>
